@@ -58,7 +58,7 @@ public class AppOrdenPositiveTest {
 
     @Test
     void test2() {
-        driver.findElement(By.cssSelector("[data-test-id = name] input")).sendKeys("Иванов_Морозов Иван Иванович");
+        driver.findElement(By.cssSelector("[data-test-id = name] input")).sendKeys("Иванов Морозов Иван Иванович");
         driver.findElement(By.cssSelector("[data-test-id = phone] input")).sendKeys("+79280020000");
         driver.findElement(By.cssSelector("[data-test-id = agreement]")).click();
         driver.findElement(By.className("button")).click();
